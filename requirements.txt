@@ -1,0 +1,10 @@
+matplotlib==3.5.3
+numpy==1.23.1
+opencv_python==4.6.0.66
+Pillow==9.2.0
+scipy==1.9.0
+skimage==0.0
+tensorboardX==2.5.1
+timm==0.6.7
+torch==1.12.1+cu116
+torchvision==0.13.1+cu116
