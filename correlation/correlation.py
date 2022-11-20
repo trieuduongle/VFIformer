@@ -104,7 +104,6 @@ kernel_Correlation_updateOutput = '''
 
 kernel_Correlation_updateGradOne = '''
     #define ROUND_OFF 50000
-
     extern "C" __global__ void kernel_Correlation_updateGradOne(
       const int n,
       const int intSample,
@@ -168,7 +167,6 @@ kernel_Correlation_updateGradOne = '''
 
 kernel_Correlation_updateGradTwo = '''
     #define ROUND_OFF 50000
-
     extern "C" __global__ void kernel_Correlation_updateGradTwo(
       const int n,
       const int intSample,

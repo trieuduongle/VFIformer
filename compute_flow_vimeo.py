@@ -375,8 +375,8 @@ def estimate(tenFirst, tenSecond):
 ##########################################################
 
 if __name__ == '__main__':
-	img_root = 'yourpath/vimeo_triplet/sequences'
-	dst_flow_root = 'yourpath/flows'
+	img_root = '/content/drive/My Drive/Duong/datasets/vimeo-samples/sequences'
+	dst_flow_root = '/content/drive/My Drive/Duong/datasets/vimeo-samples/flows'
 	if not os.path.exists(dst_flow_root):
 		os.mkdir(dst_flow_root)
 	for idx, name in enumerate(sorted(os.listdir(img_root))):
