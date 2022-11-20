@@ -175,10 +175,10 @@ class Network(torch.nn.Module):
 				# end
 
 				if self.netUpcorr is None:
-					tenCorrelation = torch.nn.functional.leaky_relu(input=correlation.FunctionCorrelation(tenFirst=tenFeaturesFirst, tenSecond=tenFeaturesSecond, intStride=1), negative_slope=0.1, inplace=False)
+					tenCorrelation = torch.nn.functional.leaky_relu(input=correlation.FunctionCorrelation(tenOne=tenFeaturesFirst, tenTwo=tenFeaturesSecond, intStride=1), negative_slope=0.1, inplace=False)
 
 				elif self.netUpcorr is not None:
-					tenCorrelation = self.netUpcorr(torch.nn.functional.leaky_relu(input=correlation.FunctionCorrelation(tenFirst=tenFeaturesFirst, tenSecond=tenFeaturesSecond, intStride=2), negative_slope=0.1, inplace=False))
+					tenCorrelation = self.netUpcorr(torch.nn.functional.leaky_relu(input=correlation.FunctionCorrelation(tenOne=tenFeaturesFirst, tenTwo=tenFeaturesSecond, intStride=2), negative_slope=0.1, inplace=False))
 
 				# end
 
